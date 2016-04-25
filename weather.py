@@ -51,7 +51,7 @@ print msg
 client.publish("javier/board1",msg)
 time.sleep(0.1)
 
-
+#
 #msg ='{\nmetric: "%s",\ndatapoints: [\n{\ntags: {"city":"Manhattan","state":"NY","latitude": "40.750.13351","longitude":"-73.99700928","neighborhood":"Chelsea","country":"US","elevation":"110","station_id":"KNYNEWYO395","rpi.datatype":"METRIC","sensor.unit":"in"},\nvalues: {"%s":"%s"}\n}]\n}' % ("Precipitation",time_stamp,precip_today_in)
 
 msg ='%s,city=Manhattan,state=NY,latitude=40.750.13351,longitude=-73.99700928,neighborhood=Chelsea,country=US,elevation=110,station_id=KNYNEWYO395,rpi.datatype=METRIC,sensor.unit=in,sensor.name=%s value=%s %s\n' % ("Precipitation","weatherPrecipitation",precip_today_in,time_stamp)
