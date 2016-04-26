@@ -25,7 +25,7 @@ mylist2 = precip_today_in_jason.split("'")
 precip_today_in = (mylist2[0])
 
 mylist3 = time_stamp_jason.split("'")
-time_stamp = int(mylist3[0])*1000
+time_stamp = int(mylist3[0])*1000000000
 
 
 #msg ='{\nmetric: "%s",\ndatapoints: [\n{\ntags: {"city":"Manhattan","state":"NY","latitude": "40.750.13351","longitude":"-73.99700928","neighborhood":"Chelsea","country":"US","elevation":"110","station_id":"KNYNEWYO395","rpi.datatype":"METRIC","sensor.unit":"F"},\nvalues: {"%s":"%s"}\n}]\n}' % ("Temperature",time_stamp,temp_f_jason)
