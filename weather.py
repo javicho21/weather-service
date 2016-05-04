@@ -8,7 +8,7 @@ key = "049e10b5aaa2711f"
 f = urllib2.urlopen('http://api.wunderground.com/api/' +key +  '/geolookup/conditions/q/NY/Manhattan.json')
 json_string = f.read()
 parsed_json = json.loads(json_string)
-print parsed_json
+#print parsed_json
 location = parsed_json['location']['city']
 
 temp_f_jason = parsed_json['current_observation']['temp_f']
